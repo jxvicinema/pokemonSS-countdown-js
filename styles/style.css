@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("/images/pokemonSS.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.countdown-content {
+  color: #fff;
+  text-align: center;
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.countdown div {
+  margin: 0.5rem;
+  font-size: 2rem;
+  border: 1px solid #fff;
+  padding: 0.2rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+p {
+  margin: 0.5rem auto;
+  font-size: 2.5rem;
+}
+
+h1 {
+  margin: 0.5rem auto;
+  font-size: 3rem;
+}
+
+.sword {
+  color: #d5152e;
+  font-weight: 700;
+}
+
+.shield {
+  color: #1957fb;
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  .countdown {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
